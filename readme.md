@@ -1,61 +1,67 @@
-# 🚦 ParkWatch AI
-### Illegal Parking Hotspot Intelligence & Enforcement Optimization Platform
+# 🚦 Parklytics AI
 
-ParkWatch AI is a smart-city intelligence platform designed to transform raw parking violation records into actionable enforcement insights.
+## Illegal Parking Hotspot Intelligence & Enforcement Optimization Platform
 
-Instead of simply displaying violations, the system:
+Parklytics AI is a **Smart City Intelligence Platform** designed to transform raw parking violation records into actionable enforcement insights using **Artificial Intelligence**, **Geospatial Analytics**, and **Data-Driven Decision Making**.
 
-- Detects illegal parking hotspots
-- Identifies recurring violation patterns
-- Estimates congestion impact caused by parking violations
-- Generates explainable risk scores
-- Recommends enforcement actions
-- Provides operational dashboards for traffic authorities
+Instead of simply displaying violations, the platform:
+- ✅ Detects illegal parking hotspots
+- ✅ Identifies recurring violation patterns
+- ✅ Estimates congestion impact
+- ✅ Generates explainable risk scores
+- ✅ Recommends enforcement actions
+- ✅ Provides operational dashboards for traffic authorities
 
 ---
 
 ## 🎯 Problem Statement
 
-Illegal parking is a major contributor to urban congestion, emergency response delays, and inefficient road utilization.
+Illegal parking is one of the leading contributors to:
+- Urban traffic congestion
+- Emergency response delays
+- Reduced road capacity
+- Increased travel time
+- Inefficient traffic enforcement
 
-Traffic authorities often rely on reactive enforcement, leading to delayed interventions and recurring violations.
+Current enforcement systems are largely reactive and depend heavily on manual patrolling.
 
-ParkWatch AI enables authorities to:
-
-- Identify high-risk locations
-- Understand when violations occur most frequently
-- Estimate congestion impact
-- Prioritize enforcement resources
-- Take proactive actions instead of reactive responses
+**Parklytics AI enables authorities to:**
+- ✅ Identify high-risk locations
+- ✅ Understand violation trends
+- ✅ Measure congestion impact
+- ✅ Prioritize enforcement resources
+- ✅ Shift from reactive to predictive enforcement
 
 ---
 
 ## ✨ Key Features
 
-### 📍 Hotspot Detection
+### 📍 AI-Powered Hotspot Detection
 - Geospatial clustering using DBSCAN
-- Heatmap generation
-- Hotspot ranking
+- Illegal parking hotspot discovery
+- Hotspot ranking and prioritization
+- Spatial intelligence visualization
 
-### 📊 Analytics Dashboard
-- Violation trends
+### 📊 Advanced Analytics Dashboard
+- Daily violation trends
 - Peak violation hours
-- Vehicle type distribution
-- Police station workload analysis
+- Vehicle type analysis
+- Police station workload insights
+- Zone-wise violation distribution
 
-### ⚠️ Risk Scoring Engine
-Explainable risk score based on:
-
+### ⚠️ Explainable Risk Scoring Engine
+Risk scores are generated using:
 - Violation density
-- Repeat violations
+- Repeat offender frequency
 - Offence severity
-- Peak hour occurrence
+- Peak-hour occurrence
 - Enforcement delays
 - Location sensitivity
 
-### 🚗 Congestion Impact Estimation
-Estimates congestion severity using:
+Each hotspot receives an interpretable score for easy decision-making.
 
+### 🚗 Congestion Impact Estimation
+The system estimates congestion severity using:
 - Violation frequency
 - Vehicle obstruction weight
 - Peak-hour density
@@ -63,51 +69,54 @@ Estimates congestion severity using:
 - Violation duration
 
 ### 🎯 Enforcement Recommendation Engine
-Provides actionable recommendations such as:
-
-- Routine Patrol
-- Peak Hour Enforcement
+Provides intelligent recommendations such as:
+- Routine Patrol Deployment
+- Peak-Hour Enforcement
 - Tow-Away Zones
-- Camera Monitoring
+- Camera Surveillance
 - Signage Improvements
-- Repeat Offender Actions
+- Repeat Offender Monitoring
 
-### 🗺️ Interactive Map
-- Heatmaps
+### 🗺️ Interactive Geospatial Dashboard
+Features:
 - Hotspot visualization
+- Heatmaps
 - Risk-based color coding
 - Junction-level insights
+- Congestion overlays
 
 ---
 
 ## 🏗️ System Architecture
-
 ```text
-CSV Dataset
-      │
-      ▼
+Parking Violation Dataset
+           │
+           ▼
 Data Cleaning & Validation
-      │
-      ▼
+           │
+           ▼
 Feature Engineering
-      │
-      ▼
-Hotspot Detection (DBSCAN)
-      │
-      ▼
-Risk Score Engine
-      │
-      ▼
+           │
+           ▼
+DBSCAN Hotspot Detection
+           │
+           ▼
+Risk Scoring Engine
+           │
+           ▼
 Congestion Impact Engine
-      │
-      ▼
+           │
+           ▼
 Recommendation Engine
-      │
-      ▼
+           │
+           ▼
 FastAPI Backend
-      │
-      ▼
-Next.js Frontend
+           │
+           ▼
+Next.js 15 Frontend
+           │
+           ▼
+Interactive Dashboard
 ```
 
 ---
@@ -115,7 +124,8 @@ Next.js Frontend
 ## 🛠️ Tech Stack
 
 ### Frontend
-- Next.js
+- Next.js 15
+- React
 - JavaScript
 - Tailwind CSS
 - shadcn/ui
@@ -129,22 +139,22 @@ Next.js Frontend
 ### Database
 - MySQL
 
-### Data Processing
+### Data Analytics
 - Pandas
 - NumPy
 - Scikit-Learn
 
-### Geospatial Analytics
+### Geospatial Intelligence
 - DBSCAN
 - GeoPandas
-- Folium / Leaflet
+- Leaflet
+- Folium
 
 ---
 
 ## 📂 Project Structure
-
 ```text
-ParkWatch-AI/
+Parklytics-AI/
 │
 ├── backend/
 │   ├── app/
@@ -155,13 +165,13 @@ ParkWatch-AI/
 │   ├── congestion_engine.py
 │   ├── recommendation_engine.py
 │   ├── seed_db.py
-│   ├── main.py
 │   └── requirements.txt
 │
 ├── frontend/
 │   ├── app/
 │   ├── components/
 │   ├── services/
+│   ├── public/
 │   └── package.json
 │
 └── README.md
@@ -169,109 +179,83 @@ ParkWatch-AI/
 
 ---
 
-## 🚀 Running the Project
+## 🚀 Installation & Setup
 
-# 🚀 ParkWatch AI - Run Instructions
+### Prerequisites
 
-## Prerequisites
-
-Install:
-
+Install the following:
 - Python 3.10+
 - Node.js 18+
-- MySQL
-- npm
+- MySQL Server
+- Git
 
----
+### 🔧 Backend Setup (Terminal 1)
 
-# Backend Setup
+1. Navigate to backend directory:
+```bash
+cd backend
+```
 
-Open the project in VS Code (or any IDE).
-
-Navigate to the backend folder.
-
----
-
-## Step 1: Install Python Dependencies
-
+2. Install Python Dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Step 2: Run Main Setup Script
-
-```bash
-python main.py
-```
-
----
-
-## Step 3: Seed Database
-
+3. Initialize Database:
 ```bash
 python seed_db.py
 ```
 
----
-
-## Step 4: Start FastAPI Server
-
+4. Start FastAPI Server:
 ```bash
-uvicorn app.main:app --reload --port 8080
+python -m uvicorn app.main:app --reload --port 9000
 ```
 
-Backend will be available at:
+**Backend Running At:** `http://localhost:9000`
 
-```text
-http://localhost:8080
-```
+**FastAPI Documentation:** `http://localhost:9000/docs`
 
-API Docs:
+### 💻 Frontend Setup (Terminal 2)
 
-```text
-http://localhost:8080/docs
-```
-
----
-
-# Frontend Setup
-
-Open a new PowerShell / Terminal.
-
-Navigate to frontend directory:
-
+1. Open a new terminal and navigate to frontend directory:
 ```bash
 cd frontend
 ```
 
----
-
-## Step 1: Install Dependencies
-
+2. Install Dependencies:
 ```bash
 npm install --legacy-peer-deps
 ```
 
----
-
-## Step 2: Start Frontend
-
+3. Start Next.js 15 Application:
 ```bash
 npm run dev
 ```
 
-Frontend will be available at:
+**Frontend Running At:** `http://localhost:3000`
 
-```text
-http://localhost:3000
+---
+
+## ▶️ Running the Complete Application
+
+**Terminal 1:**
+```bash
+cd backend
+pip install -r requirements.txt
+python seed_db.py
+python -m uvicorn app.main:app --reload --port 9000
+```
+
+**Terminal 2:**
+```bash
+cd frontend
+npm install --legacy-peer-deps
+npm run dev
 ```
 
 ---
 
-# Application Flow
-
+## 🌐 Application Flow
 ```text
 MySQL Database
        │
@@ -279,93 +263,113 @@ MySQL Database
  FastAPI Backend
        │
        ▼
- Next.js Frontend
+ REST APIs
        │
        ▼
- User Dashboard
+ Next.js 15 Frontend
+       │
+       ▼
+ Interactive Dashboard
 ```
+
+## 📊 Core Modules
+
+| Module | Description |
+|--------|-------------|
+| **Hotspot Detection** | Detects parking violation clusters using DBSCAN |
+| **Risk Assessment** | Calculates explainable hotspot risk scores |
+| **Congestion Analysis** | Measures impact of parking violations on traffic flow |
+| **Recommendation Engine** | Suggests targeted enforcement strategies |
+| **Dashboard Analytics** | Provides operational intelligence to authorities |
 
 ---
 
-# Troubleshooting
+## 🔥 Use Cases
 
-## Port Already In Use
-
-Change FastAPI port:
-
-```bash
-uvicorn app.main:app --reload --port 8081
-```
-
-or stop the existing process.
+- Smart City Monitoring
+- Urban Mobility Planning
+- Traffic Enforcement Optimization
+- Congestion Reduction
+- Parking Policy Evaluation
+- Resource Allocation Planning
 
 ---
 
-## Missing Packages
+## 🛠 Troubleshooting
 
-Reinstall dependencies:
-
+### Backend Not Starting
+Verify Python packages:
 ```bash
 pip install -r requirements.txt
 ```
 
-and
-
+### Frontend Build Errors
+Delete dependencies and reinstall:
 ```bash
+rm -rf node_modules
 npm install --legacy-peer-deps
 ```
 
----
-
-## API Not Connecting
-
-Verify backend is running:
-
-```text
-http://localhost:8080/docs
+### Port Already In Use
+Run FastAPI on another port:
+```bash
+python -m uvicorn app.main:app --reload --port 9001
 ```
 
-If the API docs page opens, the backend is working correctly.
+### API Connection Issues
+Verify backend is accessible:
+http://localhost:9000/docs
 
----
+text
 
-# You're Ready 🎉
-
-Open:
-
-```text
-http://localhost:3000
-```
-
-and start exploring ParkWatch AI.
+If Swagger UI opens successfully, the backend is running correctly.
 
 ---
 
 ## 📈 Future Scope
 
-- Real-time CCTV integration
-- Live traffic feeds
-- Predictive hotspot forecasting
-- Mobile enforcement application
-- Smart patrol route optimization
-- AI-powered congestion prediction
+- Real-Time CCTV Integration
+- Live Traffic Feed Integration
+- AI-Based Congestion Prediction
+- Predictive Hotspot Forecasting
+- Smart Patrol Route Optimization
+- Mobile Enforcement Application
+- Digital Tow-Away Management
+
+---
+
+## 🔗 Live Deployment
+
+**Live Website on Vercel:**  
+🌐 [https://parklytice-ailive.vercel.app/](https://parklytice-ailive.vercel.app/)
 
 ---
 
 ## 👥 Team
-- Darshit Agarwal
-- Yatish Singhal
-- Yashasvi Saini
-- Harshit Singh
+
+- Anurag Srivastava
+- Satvik Gupta
+- Nupur Madaan
+- Pritam
 
 ---
 
 ## 🏆 Impact
 
-ParkWatch AI helps authorities move from:
+### Before Parklytics AI
+- ❌ Reactive Enforcement
+- ❌ Manual Monitoring
+- ❌ Delayed Responses
+- ❌ Resource Wastage
 
-Reactive Enforcement ➜ Predictive Enforcement
+### After Parklytics AI
+- ✅ Predictive Enforcement
+- ✅ AI-Powered Insights
+- ✅ Proactive Decision Making
+- ✅ Efficient Resource Allocation
 
-Raw Violation Records ➜ Actionable Intelligence
+---
 
-Traffic Monitoring ➜ Smart Urban Mobility Management
+## 🚦 Transforming Raw Parking Violations into Actionable Urban Intelligence
+
+**Parklytics AI — Smarter Parking Analytics for Smarter Cities**
