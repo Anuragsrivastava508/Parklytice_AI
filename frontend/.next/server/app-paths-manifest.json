@@ -1,8 +1,12 @@
 {
-  "/page": "app/page.js",
-  "/map/page": "app/map/page.js",
-  "/recommendations/page": "app/recommendations/page.js",
-  "/records/page": "app/records/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/analytics/page": "app/analytics/page.js",
+  "/hotspots/[id]/page": "app/hotspots/[id]/page.js",
   "/login/page": "app/login/page.js",
-  "/analytics/page": "app/analytics/page.js"
+  "/map/page": "app/map/page.js",
+  "/offenders/page": "app/offenders/page.js",
+  "/page": "app/page.js",
+  "/recommendations/page": "app/recommendations/page.js",
+  "/stations/page": "app/stations/page.js",
+  "/records/page": "app/records/page.js"
 }
