@@ -353,10 +353,10 @@ and start exploring ParkWatch AI.
 ---
 
 ## 👥 Team
-- Darshit Agarwal
-- Yatish Singhal
-- Yashasvi Saini
-- Harshit Singh
+- Anurag Srivastava
+- Satvik Gupta
+- Nupur Madaan
+- Pritam
 
 ---
 
